@@ -1,0 +1,40 @@
+/* 布局Google Image Search的图标和 images 文字 */
+
+.image-logo {
+    position: relative; /* 相对定位，为内部绝对定位元素提供参照 */
+    display: inline-block; /* 使容器的宽度适应内容 */
+    transform: translateX(-50%);/*将容器水平移动自身宽度的一半,达到水平居中的效果。*/
+    left: 50%;/*将容器的左边缘移动到页面中心*/
+}
+
+.google-logo {
+    width: 272px; 
+    height: auto; /* 高度自动，保持宽高比 */
+}
+
+.images-text {
+    position: absolute; /* 绝对定位 */
+    bottom: 0; 
+    right: 1px; 
+}
+
+/* 另一种方法是使用 margin: 0 auto; 配合固定宽度。
+.image-logo 容器被设置为 position: relative; 
+并且有一个固定的宽度。使用 margin: 0 auto; 将容器水平居中。*/
+/* 
+.image-logo {
+    position: relative;
+    width: 272px; 设置固定宽度
+    margin: 0 auto; 水平居中
+}
+
+.google-logo {
+    width: 100%;
+    height: auto;
+}
+
+.images-text {
+    position: absolute;
+    bottom: 0;
+    right: 1px;
+} */
